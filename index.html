@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Navigation</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Include the navigation -->
-    <!-- include doesn't work so use your server code for include here in php -->
-    <!-- <include src="navigation.html"></include> -->
+<!-- Include the navigation -->
+<!-- include doesn't work so use your server code for include here in php -->
+<!-- <include src="navigation.html"></include> -->
 
-    <nav>
+<!-- <nav>
       <ul>
         <li class="nav-item" id="about"><a href="about.html">About</a></li>
         <li class="nav-item" id="apply"><a href="apply.html">Apply</a></li>
@@ -19,9 +10,107 @@
           <a href="contact.html">Contact</a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
 
-    <h1>Welcome to the Home Page!</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://researchstudies.cuanschutz.edu/Content/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://researchstudies.cuanschutz.edu/Content/style-researchstudies.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+            // Get the list items
+            var listItems = document.querySelectorAll('#myList li');
+    
+            // Check if window.location.href matches any list item's href
+            listItems.forEach(function (item) {
+                var anchor = item.querySelector('a');
+                if (anchor && anchor.getAttribute('href') === window.location.href) {
+                    // If matched, add "active" class to the list item
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script> -->
+
+    <title>Responsive Navbar</title>
+  </head>
+  <body>
+    <!-- Top Fixed Global Bar Start  -->
+    <div class="navbar navbar-expand-md bg-white fixed-top global-bar">
+      <div class="container">
+        <a class="navbar-brand" href="https://medschool.ucdenver.edu/neurology">
+          <img
+            src="https://researchstudies.cuanschutz.edu/Content/images/logo-black.png"
+            alt="CU Logo"
+            id="CU"
+          />
+          <span class="d-none d-md-inline">University of Colorado</span>
+          <strong
+            >Anschutz<span class="d-none d-sm-inline"
+              >Medical Campus</span
+            ></strong
+          >
+        </a>
+        <div class="navbar-nav">
+          <strong style="font-size: 1.25rem; margin-bottom: 11px"
+            >Department of Neurology</strong
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Top Fixed Global Bar End  -->
+
+    <!-- Navigation Bar Start  -->
+    <nav class="priority-plus navbar navbar-expand-md navbar-light bg-white">
+      <div class="container">
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item" id="home">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item" id="about">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item" id="navigation">
+              <a href="navigation.html" class="nav-link">Navigation</a>
+            </li>
+            <li class="nav-item" id="contact">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <h1>This is the Home or Index page</h1>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

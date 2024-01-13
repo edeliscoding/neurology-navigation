@@ -8,14 +8,17 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "about.html";
   });
 
-  document.getElementById("apply").addEventListener("click", function () {
-    window.location.href = "apply.html";
-  });
-
   document.getElementById("contact").addEventListener("click", function () {
     window.location.href = "contact.html";
   });
 
+  document.getElementById("navigation").addEventListener("click", function () {
+    window.location.href = "navigation.html";
+  });
+
+  document.getElementById("home").addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
   // Set the "active" class for the current page's link
   var currentLink = document.getElementById(currentPage.replace(".html", ""));
   if (currentLink) {
